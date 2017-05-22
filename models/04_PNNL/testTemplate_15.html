@@ -1,0 +1,39 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" href="ModelInfoTemplate_15.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="headertext">
+  <div id="headerline1">GMLC-OL Model Information Template</div>
+  <div id="headerline2">Version 1.0 - May 2016</div>
+</div>
+<div id="headericon"><img src="templateheadericon.png"></div>
+<div id="informationLayout">
+  <div id="nameBox"><span class="boxHeading">Model Name:</span><span class="boxContents" id="modelName">&nbspMANGO – Modal Analysis for Grid Operation</span></div>
+    <div id="generaldiv1">
+    <div id="authorBox" class="generalInfoBox"><span class="boxHeading"><p>Name and Affiliation of Author:</p></span><span class="boxContents" id="author">Yousu Chen <br>Pacific Northwest National Laboratory</span></div>
+    <div id="dateBox" class="generalInfoBox"><span class="boxHeading"><p>Date of Publication:</p></span><span class="boxContents" id="date">October 2010</span></div>
+    <div id="versionBox" class="generalInfoBox"><span class="boxHeading"><p>Version Information:</p></span><span class="boxContents" id="version">N/A</span></div>
+    <div id="accessibilityBox" class="generalInfoBox"><span class="boxHeading"><p>Model Accessibility:</p></span><span class="boxContents" id="accessibility">Simulation studies were conducted with commercialized software.</span></div>
+      <div id="proprietaryBox" class="generalInfoBox"><span class="boxHeading"><p>Proprietary Documentation:</p></span><span class="boxContents" id="proprietary">No. The code is freely available, but the data used in the initial model tests is sensitive.</span></div>
+  </div>
+  <div id="generaldiv2">
+    <div id="symbolBox" class="generalInfoBox"><span class="boxHeading"><p>Model Symbol:</p></span><span class="boxContents" id="version">None.</span></div>
+    <div id="accreditationBox" class="generalInfoBox"><span class="boxHeading"><p>Accreditation:</p></span><span class="boxContents" id="accreditation">None.</span></div>
+    <div id="typeBox" class="generalInfoBox"><span class="boxHeading"><p>Type/Category of Model:</p></span><span class="boxContents" id="type"><ul><li>Transmission System, not a device.</li></ul></span></div>
+  </div>
+  
+  <div id="modeldiv1">
+    <div id="backgroundBox" class="modelInfoBox"><span class="boxHeading"><p>Brief Theoretical Background:</p></span><span class="boxContents" id="background"><p>Modal Analysis for Grid Operation (MANGO) is a method for damping improvement through operating point adjustments. It explores the relationship between low damping and grid operating conditions to develop recommended actions for damping improvement, and therefore reduce the chance of system breakup and power outages.</p><p>The MANGO procedure consists of three major steps:<ol type="1"><li>Recognition – operator recognizes the need for operating point adjustment through online ModeMeter monitoring;</li><li>Implementation – operator implements the adjustment per recommendations by the MANGO procedure; and</li><li>Evaluation – operator evaluates the effectiveness of the adjustment using ModeMeter and repeats the procedure if necessary</li></ol><p>Three approaches – direct modal sensitivity estimation, ANN-based nonlinear mapping, and a decision-tree method – have been formulated and studied with promising results from a medium-size system. Impact of topology change on damping has been studied as well.</p><p>MANGO control does not rely on a known system model, but uses real-time phasor measurements and other synchronized measurements. MANGO can potentially utilize responsive loads to adjust system power flow patterns to improve system damping. MANGO can also utilize some other smart grid technologies for power flow pattern adjustment. Therefore, MANGO can not only improve grid reliability and efficiency, but also help to facilitate the development of smart grid technologies such as renewable energy, demand response, and energy storage. This has both economic and environmental implications.</p><span class="boxHeading"><p>List of References:</p></span><span class="boxContents" id="background"><ul><li>Huang Z, N Zhou, FK Tuffner, Y Chen, DJ Trudnowski, R Diao, JC Fuller, WA Mittelstadt, JF Hauer, and JE Dagle. 2010. MANGO - Modal Analysis for Grid Operation: A Method for Damping Improvement through Operating Point Adjustment. PNNL-19890, Pacific Northwest National Laboratory, Richland, WA.</li><li>Y Chen, J Fuller, R Diao, N Zhou, Huang Z, F Tuffner, 2011.  The Influence of Topology Changes on Inter-area Oscillation Modes and Mode Shapes (<a href="http://ieeexplore.ieee.org/document/6039904/">http://ieeexplore.ieee.org/document/6039904/</a>).</li></ul></span></div>
+    <div id="specificationsBox" class="modelInfoBox"><span class="boxHeading"><p>Model Specifications:</p></span><span class="boxContents" id="Specifications">This is more of a software tool than a model.</span></div>
+    <div id="dependenciesBox" class="modelInfoBox"><span class="boxHeading"><p>Model Dependencies:</p></span><span class="boxContents" id="dependencies">Neuro Network Toolbox and Power System Toolbox (PST).</span></div>
+    <div id="interfacingBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Information:</p></span><span class="boxContents" id="interfacing">Platform: Windows OS, and MATLAB <br>Input Requirements: Power system model <br>Possible Outputs: A list of actions designed to help improve efficiency of transmission systems. This list includes the duration of dispatch and topology changes.</span></div>
+    <div id="diagramBox" class="modelInfoBox"><span class="boxHeading"><p>Diagrammatic Representation:</p></span><span class="boxContents" id="diagram"><p><img src="MANGO_Diagram.png" height="151px" width="255px"></p></span></div>
+    <div id="hilBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Capabilities for HIL Simulations:</p></span><span class="boxContents" id="hil">No.</span></div>
+    <div id="modelValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Model Validation:</p></span><span class="boxContents" id="hil">Validation of the method itself is relatively straightforward. Sets of simulation data are generated and the particular MANGO approach is applied. This can be as simple as varying the output of a single generator and observing the time-series or eigenvalue-analysis results. If the results of the method fall within a specified tolerance of the expectation, the methodology and understanding of that method are valid. If it fails to meet these expectations, the method may require a refinement in its application, or the understanding of the fundamental principles.<p>The second form of validation, validation of consistency, often takes two approaches as well. The first is to determine if a method produces similar results over several trials. The other form of consistency validation is to ensure a particular program is providing a reasonable answer. To investigate this requirement, a data set is often analyzed by a second technique. These techniques may not be different from any aspect aside from their originating vendor. For example, the PowerTech Labs time domain simulation incorporates a method for performing ringdown analysis [45], as does the PNNL Dynamic System Identification (DSI) toolbox [56]. Both programs use similar approaches and methods, but two different implementations. For a proper validation, both programs should arrive at similar results for a given data set.</p></span></div>
+    <div id="metricValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Metrics for validation:</p></span><span class="boxContents" id="hil">No. If following the list of recommended actions results in an improvement, then it is validated.</span></div>
+  </div>
+</div>
+
+
+</body></html>

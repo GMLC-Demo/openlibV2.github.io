@@ -1,0 +1,40 @@
+#informationLayout { width: 7.0in; height: 9.0in; clear: left;}
+#generaldiv1 { width: 3.5in; float: left; }
+#generaldiv2 { width: 3.5in; float: left; }
+#authorBox { width: 3.5in; height: 0.65in; }
+#dateBox { width: 1.75in; height: 0.65in; float: left; }
+#versionBox { width: 1.75in; height: .65in; float: left; }
+#accessibilityBox { width: 3.5in; height: 1.23in; clear: left;}
+#proprietaryBox { width: 3.5in; height: 0.55in; }
+#symbolBox { width: 1.75in; height: 1.3in; float: left; }
+#accreditationBox { width: 1.75in; height: 1.3in;  float: left; }
+#typeBox { width: 3.5in; height: 1.78in; clear: left; }
+#backgroundBox { width: 7in; height: 3.9in; clear: left; }
+#specificationsBox { width: 3.5in; height: 4.0in; float: left; }
+#dependenciesBox { width: 3.5in; height: 4.0in; float: left; }
+#interfacingBox { width: 7in; height: 2.55in; clear: left; }
+#diagramBox { width: 3.5in; height: 2.1in; float: left; }
+#hilBox { width: 3.5in; height: 2.1in; float: left; }
+#modelValidatBox { width: 3.5in; height: 3.95in; float: left; }
+#metricValidatBox { width: 3.5in; height: 3.95in; float: left; }
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+#nameBox { background: #F2F2F2; height: .375in; box-sizing: border-box; border-style: solid; border-width: 1px; padding-left: .03in; }
+.generalInfoBox { background: #EAF1DD; box-sizing: border-box; border-style: solid; border-width: 1px; padding-left: .03in; }
+.modelInfoBox { background: #C6D9F1; box-sizing: border-box; border-style: solid; border-width: 1px; padding-left: .03in; }
+.boxHeading { color: #1F497D; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; }
+.boxHeading p { line-height: 0.1in; margin-top: .030in; margin-bottom: .030in; }
+.boxContents { color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; }
+.boxContents ul { margin-top: .060in; margin-bottom: .060in; padding-left: 0.2in; }
+#headertext { width: 5.5in; float: left; }
+#headericon { float: left; }
+#headericon img { width: 1.5in; height: .875in; }
+#headerline1 { color: #1F497D; font-family: Arial, Helvetica, sans-serif; font-size: 20pt; }
+#headerline2 { color: #1F497D; font-family: Arial, Helvetica, sans-serif; font-size: 16pt; }

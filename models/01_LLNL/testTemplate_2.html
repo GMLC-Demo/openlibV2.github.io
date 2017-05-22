@@ -1,0 +1,39 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" href="ModelInfoTemplate_2.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="headertext">
+  <div id="headerline1">GMLC-OL Model Information Template</div>
+  <div id="headerline2">Version 1.0 - May 2016</div>
+</div>
+<div id="headericon"><img src="templateheadericon.png"></div>
+<div id="informationLayout">
+  <div id="nameBox"><span class="boxHeading">Model Name:</span><span class="boxContents" id="modelName">&nbspScalable simulation test case 1</span></div>
+    <div id="generaldiv1">
+    <div id="authorBox" class="generalInfoBox"><span class="boxHeading"><p>Name and Affiliation of Author:</p></span><span class="boxContents" id="author">Philip Top<br>Lawrence Livermore National Laboratory<br>top1@llnl.gov</span></div>
+    <div id="dateBox" class="generalInfoBox"><span class="boxHeading"><p>Date of Publication:</p></span><span class="boxContents" id="date">2016-08-12</span></div>
+    <div id="versionBox" class="generalInfoBox"><span class="boxHeading"><p>Version Information:</p></span><span class="boxContents" id="version">0.5</span></div>
+    <div id="accessibilityBox" class="generalInfoBox"><span class="boxHeading"><p>Model Accessibility:</p></span><span class="boxContents" id="accessibility"><ul><li>Model is available with the open-source GridDyn power transmission system simulation software (<a href="https://github.com/LLNL/GridDyn">https://github.com/LLNL/GridDyn</a>).</li><li>GridDyn is cross platform and licensed with BSD licensing.</li></ul></span></div>
+    <div id="proprietaryBox" class="generalInfoBox"><span class="boxHeading"><p>Proprietary Documentation:</p></span><span class="boxContents" id="proprietary">Not proprietary. All available documentation is public.</span></div>
+  </div>
+  <div id="generaldiv2">
+    <div id="symbolBox" class="generalInfoBox"><span class="boxHeading"><p>Model Symbol:</p></span><span class="boxContents" id="version"></span></div>
+    <div id="accreditationBox" class="generalInfoBox"><span class="boxHeading"><p>Accreditation:</p></span><span class="boxContents" id="accreditation">TRL 2</span></div>
+    <div id="typeBox" class="generalInfoBox"><span class="boxHeading"><p>Type/Category of Model:</p></span><span class="boxContents" id="type"><ul><li>System simulation test</li><li>Transmission network</li><li>9 to 1,000,000 buses defined and tested in terms N where the number of busses is N<sup>2</sup> (bigger cases may be possible but not tested yet with GridDyn) type, parameter tuning reqd.</li></ul></span></div>
+  </div>
+  
+  <div id="modeldiv1">
+    <div id="backgroundBox" class="modelInfoBox"><span class="boxHeading"><p>Brief Theoretical Background:</p></span><span class="boxContents" id="background">A scalable power transmission system model for testing solver scalability. A number of variants exist. Initial model includes a square matrix of power system busses. A generator for every 9 buses, and a motor load for every 4 buses. A small load is attached to every bus. The swing bus is the generator bus near the center of the system. Transmission lines connect every bus to its neighbors. The first variant uses a 4 element neighborhood. The second also attaches the downward diagonal lines, and the third uses a 9 element neighborhood. The edge buses have fewer transmission lines since they have few neighbor buses. Other variants change the type of the load. The specified generator output must be tuned precisely to the load so the slack bus and transmission lines are not overloaded; this is particularly true for larger sizes of network.</span></div>
+    <div id="specificationsBox" class="modelInfoBox"><span class="boxHeading"><p>Model Specifications:</p></span><span class="boxContents" id="specifications"><ul><li>Not a realistic grid model. It is intended for testing software, specifically solver scalability.</li></ul></span></div>
+    <div id="dependenciesBox" class="modelInfoBox"><span class="boxHeading"><p>Model Dependencies:</p></span><span class="boxContents" id="dependencies">This model depends on a generator, motor load, bus and transmission line models, all of which exist in GridDyn.</span></div>
+    <div id="interfacingBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Information:</p></span><span class="boxContents" id="interfacing">Runs in GridDyn using the GridDyn XML file input format and controls. Outputs include power flow results, and possible extensions to dynamic simulation. Future work includes generating the test cases in other formats for other software.</span></div>
+    <div id="diagramBox" class="modelInfoBox"><span class="boxHeading"><p>Diagrammatic Representation:</p></span><span class="boxContents" id="diagram"><img src="Scalable_Simulation_test_case_1.svg" height="150px" width="150px"/></span></div>
+    <div id="hilBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Capabilities for HIL Simulations:</p></span><span class="boxContents" id="hil">None used or planned.</span></div>
+    <div id="modelValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Model Validation:</p></span><span class="boxContents" id="hil">Model not based on realistic network, used for software testing. Validation involves ensuring the model converges and no line flows exceed the capacity of the specified transmission lines and all bus voltages are within normal levels.</span></div>
+    <div id="metricValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Metrics for validation:</p></span><span class="boxContents" id="hil">None.</span></div>
+  </div>
+</div>
+
+
+</body></html>

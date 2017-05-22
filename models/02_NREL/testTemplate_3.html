@@ -1,0 +1,39 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" href="ModelInfoTemplate_3.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="headertext">
+  <div id="headerline1">GMLC-OL Model Information Template</div>
+  <div id="headerline2">Version 1.0 - May 2016</div>
+</div>
+<div id="headericon"><img src="templateheadericon.png"></div>
+<div id="informationLayout">
+  <div id="nameBox"><span class="boxHeading">Model Name:</span><span class="boxContents" id="modelName">&nbspDistributed Energy Resource Hosting Capacity Analysis Tool (DERHCAT)</span></div>
+    <div id="generaldiv1">
+    <div id="authorBox" class="generalInfoBox"><span class="boxHeading"><p>Name and Affiliation of Author:</p></span><span class="boxContents" id="author">Fei Ding<br>National Renewable Energy Laboratory<br>Fei.Ding@nrel.gov</span></div>
+    <div id="dateBox" class="generalInfoBox"><span class="boxHeading"><p>Date of Publication:</p></span><span class="boxContents" id="date">2015-12-30</span></div>
+    <div id="versionBox" class="generalInfoBox"><span class="boxHeading"><p>Version Information:</p></span><span class="boxContents" id="version">Initial version.</span></div>
+    <div id="accessibilityBox" class="generalInfoBox"><span class="boxHeading"><p>Model Accessibility:</p></span><span class="boxContents" id="accessibility">Model is available by contacting the POC.</span></div>
+    <div id="proprietaryBox" class="generalInfoBox"><span class="boxHeading"><p>Proprietary Documentation:</p></span><span class="boxContents" id="proprietary">Not proprietary.</span></div>
+  </div>
+  <div id="generaldiv2">
+    <div id="symbolBox" class="generalInfoBox"><span class="boxHeading"><p>Model Symbol:</p></span><span class="boxContents" id="version">N/A</span></div>
+    <div id="accreditationBox" class="generalInfoBox"><span class="boxHeading"><p>Accreditation:</p></span><span class="boxContents" id="accreditation">N/A</span></div>
+    <div id="typeBox" class="generalInfoBox"><span class="boxHeading"><p>Type/Category of Model:</p></span><span class="boxContents" id="type">Used for distribution systems.</span></div>
+  </div>
+  
+  <div id="modeldiv1">
+    <div id="backgroundBox" class="modelInfoBox"><span class="boxHeading"><p>Brief Theoretical Background:</p></span><span class="boxContents" id="background">Various incentive mechanisms have stimulated the grid integration of distributed energy resources (DERs). However, the high DER penetration will bring challenges to the existing power grid. Hosting capacity is defined as the total DER capacity that can be accommodated on a given feeder without violating operational constraints. Understanding the hosting capacity of a feeder can help utilities to make timely decisions for DER integration requests and ensure the distribution grids to operate appropriately. This software provide the impact analysis result of DER penetration on distribution feeders, and can estimate DER hosting capacity of distribution feeders based on a stochastic analysis approach. Besides, this software provides multiple approaches that can help increase PV hosting capacity, including selecting DER locations, adjusting voltage control devices, applying volt-var control and volt-watt control using smart inverters, etc. And importantly, this software is applicable to any distribution feeder that is modeled using OpenDSS. In sum, this software can help users (such as utilities, vendors, etc.) to understand the DER hosting capacity of distribution feeders from multiple aspects and develop strategies to increase DER hosting capacity. There are five functionalities designed:<ol type="1"><li>DER Hosting Capacity Estimation: The hosting capacity estimation is realized using a Monte-Carlo simulation based stochastic analysis approach. And the diversity of DER types and sizes are included into the study.</li><li>Sensitivity Analysis of DER Hosting Capacity: This software has three types of sensitivity studies including DER location, feeder characteristics and DER operating power factor.</li><li>Multiple Screening Methods for DER Integration: Three screening methods including impedance screen, distance screen and ratio screen are developed and included in the software. By selecting each screen, DERs are then integrated into the grid and the impact analysis result on distribution grid can be obtained.</li><li>Fast Screen: A fast screen is developed to make an expident decision for DER grid integration requests.</li><li>Advanced Function: This software is also capable of implementing smart inverter functions (constant power factor setting, volt-var control, volt-watt control) and voltage control device regulation (relax voltage regulator and capacitor settings). Under each function, the DER hosting capacity result will be generated.</li></ol>For all above studies, this software will generate detailed results of voltage and current into the file, and also generate result figures showing the DER impact on the feeder. So software user can get a clear understanding about the impact of DER grid integration and obtain all useful information for DER hosting capacity study.</span><span class="boxHeading"><p><br>List of References:</p></span><span class="boxContents" id="background"><ul><li><b>F. Ding</b> and B. Mather, “On distributed PV hosting capacity estimation, sensitivity study and improvement,” <i>IEEE Transactions on Sustainable Energy</i>, DOI: 10.1109/TSTE.2016.2640239, 2016.</li><li><b>F. Ding</b>, B. Mather and P. Gotseff, “Technologies to increase PV hosting capacity in distribution feeders,” in <i>2016 IEEE PES General Meeting</i>, pp. 1-5, Boston, MA, July 2016.</li></ul></span></div>
+    <div id="specificationsBox" class="modelInfoBox"><span class="boxHeading"><p>Model Specifications:</p></span><span class="boxContents" id="specifications">DERHCAT is applicable to all feeders that are modeled using OpenDSS by following the instructions provided.</span></div>
+    <div id="dependenciesBox" class="modelInfoBox"><span class="boxHeading"><p>Model Dependencies:</p></span><span class="boxContents" id="dependencies">OpenDSS installed, MATLAB runtime installed.</span></div>
+    <div id="interfacingBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Information:</p></span><span class="boxContents" id="interfacing">The tool is packaged into MATLAB executable. All intrinsic codes are written in MATLAB .m files. Input information is OpenDSS system model. Outputs include both hosting capacity value and detailed results generated from the study, also include figures and excel summaries.</span></div>
+    <div id="diagramBox" class="modelInfoBox"><span class="boxHeading"><p>Diagrammatic Representation:</p></span><span class="boxContents" id="diagram"><img src="Distributed_Energy_Resource_Hosting_Capacity_Analysis_Tool_(DERHCAT).png" height="275px" width="275px" /></span></div>
+    <div id="hilBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Capabilities for HIL Simulations:</p></span><span class="boxContents" id="hil">None used or planned.</span></div>
+    <div id="modelValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Model Validation:</p></span><span class="boxContents" id="hil">DERHCAT has been tested on multiple real utility distribution feeders, and its performance has been validated.</span></div>
+    <div id="metricValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Metrics for validation:</p></span><span class="boxContents" id="hil">Please refer to [1] and [2] for details.</span></div>
+  </div>
+</div>
+
+
+</body></html>

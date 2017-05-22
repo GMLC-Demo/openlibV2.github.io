@@ -1,0 +1,39 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" href="ModelInfoTemplate_4.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="headertext">
+  <div id="headerline1">GMLC-OL Model Information Template</div>
+  <div id="headerline2">Version 1.0 - May 2016</div>
+</div>
+<div id="headericon"><img src="templateheadericon.png"></div>
+<div id="informationLayout">
+  <div id="nameBox"><span class="boxHeading">Model Name:</span><span class="boxContents" id="modelName">&nbspPower Quality Score Calculation for Distribution Systems with DER Integration (PQScal)</span></div>
+    <div id="generaldiv1">
+    <div id="authorBox" class="generalInfoBox"><span class="boxHeading"><p>Name and Affiliation of Author:</p></span><span class="boxContents" id="author">Fei Ding<br>National Renewable Energy Laboratory<br>Fei.Ding@nrel.gov</span></div>
+    <div id="dateBox" class="generalInfoBox"><span class="boxHeading"><p>Date of Publication:</p></span><span class="boxContents" id="date">2016-12-30</span></div>
+    <div id="versionBox" class="generalInfoBox"><span class="boxHeading"><p>Version Information:</p></span><span class="boxContents" id="version">Initial version.</span></div>
+    <div id="accessibilityBox" class="generalInfoBox"><span class="boxHeading"><p>Model Accessibility:</p></span><span class="boxContents" id="accessibility">Model is available by contacting the POC.</span></div>
+    <div id="proprietaryBox" class="generalInfoBox"><span class="boxHeading"><p>Proprietary Documentation:</p></span><span class="boxContents" id="proprietary">Not proprietary.</span></div>
+  </div>
+  <div id="generaldiv2">
+    <div id="symbolBox" class="generalInfoBox"><span class="boxHeading"><p>Model Symbol:</p></span><span class="boxContents" id="version">N/A</span></div>
+    <div id="accreditationBox" class="generalInfoBox"><span class="boxHeading"><p>Accreditation:</p></span><span class="boxContents" id="accreditation">N/A</span></div>
+    <div id="typeBox" class="generalInfoBox"><span class="boxHeading"><p>Type/Category of Model:</p></span><span class="boxContents" id="type"><ul><li>Software codes</li><li>Used for distribution systems</li></ul></span></div>
+  </div>
+  
+  <div id="modeldiv1">
+    <div id="backgroundBox" class="modelInfoBox"><span class="boxHeading"><p>Brief Theoretical Background:</p></span><span class="boxContents" id="background"><p>Power Quality is of great importance to evaluate the “health” of a distribution system, especially when the distributed energy resource (DER) penetration becomes more significant. The individual components that make up power quality, such as voltage magnitude and unbalance, can be measured in simulations or in the filed, however, a comprehensive method to incorporate all of these values into a single score doesn't exist. As a result, we propose a methodology to quantify the power quality health using the single number value, named as Power Quality Score (PQS). The PQS is dependent on six metrics that are developed based on both components that directly impact power quality and those are often reference in the context of power quality. These six metrics are named as System Average Voltage Magnitude Violation Index (SAVMVI), System Average Voltage Fluctuation Index (SAVFI), System Average Voltage Unbalance Index (SAVUI), System Control Device Operation Index (SCDOI), System Reactive Power Demand Index (SRPDI) and System Energy Loss Index (SELI).</p><p>This software tool, PQScal, is developed based on this novel PQS methodology. Besides of traditional distribution systems, PQScal can also measure the power quality for distribution systems with various DER penetrations. PQScal has been tested on two utility distribution feeders with distinct model characteristics and its effectiveness has been proved. In sum, PQScal can help utilities or other parities to measure the power quality of distribution systems with DER integration easily and effectively.</p></span><span class="boxHeading"><p><br>List of References:</p></span><span class="boxContents" id="background"><ul><li><b>F. Ding</b> A. Nagarajan, S. Chakraborty, M. Baggu, A. Nguyen, S. Walinga, M. McCarty and F. Bell, “Photovoltaic impact assessment of smart inverter volt-VAR control on distribution system conservation voltage reduction and power quality,” NREL Technical Report, NREL/TP-5D00-67296, Dec. 2016.</li></ul></span></div>
+    <div id="specificationsBox" class="modelInfoBox"><span class="boxHeading"><p>Model Specifications:</p></span><span class="boxContents" id="specifications">With the appropriate system models, PQScal can be used to measure the power quality of any system.</span></div>
+    <div id="dependenciesBox" class="modelInfoBox"><span class="boxHeading"><p>Model Dependencies:</p></span><span class="boxContents" id="dependencies">N/A</span></div>
+    <div id="interfacingBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Information:</p></span><span class="boxContents" id="interfacing">Runs in Python. Input information is OpenDSS system model. Outputs include the power quality score value, as well as time-series simulation results of voltages, currents, powers and control device operations.</span></div>
+    <div id="diagramBox" class="modelInfoBox"><span class="boxHeading"><p>Diagrammatic Representation:</p></span><span class="boxContents" id="diagram">N/A</span></div>
+    <div id="hilBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Capabilities for HIL Simulations:</p></span><span class="boxContents" id="hil">None used or planned.</span></div>
+    <div id="modelValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Model Validation:</p></span><span class="boxContents" id="hil">PQScal model has been tested on two real utility distribution systems, and its performance has been validated.</span></div>
+    <div id="metricValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Metrics for validation:</p></span><span class="boxContents" id="hil">Please refer to [1] for details.</span></div>
+  </div>
+</div>
+
+
+</body></html>

@@ -1,0 +1,39 @@
+<html><head>
+  <link rel="stylesheet" type="text/css" href="ModelInfoTemplate_5.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="headertext">
+  <div id="headerline1">GMLC-OL Model Information Template</div>
+  <div id="headerline2">Version 1.0 - May 2016</div>
+</div>
+<div id="headericon"><img src="templateheadericon.png"></div>
+<div id="informationLayout">
+  <div id="nameBox"><span class="boxHeading">Model Name:</span><span class="boxContents" id="modelName">&nbspAn Extended IEEE 118-bus Test System with High Renewable Penetration</span></div>
+    <div id="generaldiv1">
+    <div id="authorBox" class="generalInfoBox"><span class="boxHeading"><p>Name and Affiliation of Author:</p></span><span class="boxContents" id="author">Carlo Brancucci Martinez-Anido<br>National Renewable Energy Laboratory<br>Carlo.BrancucciMartinez-Anido@nrel.gov</span></div>
+    <div id="dateBox" class="generalInfoBox"><span class="boxHeading"><p>Date of Publication:</p></span><span class="boxContents" id="date">2017</span></div>
+    <div id="versionBox" class="generalInfoBox"><span class="boxHeading"><p>Version Information:</p></span><span class="boxContents" id="version">V1</span></div>
+    <div id="accessibilityBox" class="generalInfoBox"><span class="boxHeading"><p>Model Accessibility:</p></span><span class="boxContents" id="accessibility">Open source:<p><ul><li>Solar, wind, hydro and load data (<a href="http://www.nrel.gov/esif/assets/docs/input-files.zip">http://www.nrel.gov/esif/assets/docs/input-files.zip)</a></li> <li>System as .csv files and FAQ (<a href="http://www.nrel.gov/esif/assets/docs/additional-files-mti-118.zip">http://www.nrel.gov/esif/assets/docs/ additional-files-mti-118.zip)</a></li><li>Plexos Model as plexos file (<a href="http://www.nrel.gov/esif/assets/docs/mti-118-mt-da-rt-reserves-all-generators.xml">http://www.nrel.gov/esif/assets/docs/mti-118-mt-da-rt-reserves-all-generators.xml)</a></li><li>Plexos model as .xls file (<a href="http://www.nrel.gov/esif/assets/docs/plexos-export.xls">http://www.nrel.gov/esif/assets/docs/plexos-export.xls)</a></li></ul></span></div>
+      <div id="proprietaryBox" class="generalInfoBox"><span class="boxHeading"><p>Proprietary Documentation:</p></span><span class="boxContents" id="proprietary">Not proprietary.</span></div>
+  </div>
+  <div id="generaldiv2">
+    <div id="symbolBox" class="generalInfoBox"><span class="boxHeading"><p>Model Symbol:</p></span><span class="boxContents" id="version">N/A</span></div>
+    <div id="accreditationBox" class="generalInfoBox"><span class="boxHeading"><p>Accreditation:</p></span><span class="boxContents" id="accreditation">N/A</span></div>
+    <div id="typeBox" class="generalInfoBox"><span class="boxHeading"><p>Type/Category of Model:</p></span><span class="boxContents" id="type"><ul><li>Bulk power transmission test system</li><li>PLEXOS (commercial production cost modeling tool) model database provided together with input data (including load, wind, and solar time series)</li></ul></span></div>
+  </div>
+  
+  <div id="modeldiv1">
+    <div id="backgroundBox" class="modelInfoBox"><span class="boxHeading"><p>Brief Theoretical Background:</p></span><span class="boxContents" id="background"><p>This database is published and described in an IEEE Transaction on Power Systems article [1]. This is a database of a publicly available version of the IEEE 118–bus test system, named NREL-118. The database is based on the transmission representation (buses and lines) of the IEEE 118-bus test system, with a reconfigured generation representation using three regions of the US Western Interconnection from the latest Western Electricity Coordination Council (WECC) 2024 Common Case [2]. Time-synchronous hourly load, wind, and solar time series are provided for over one year (8784 hours). The public database presented and described in this manuscript will allow researchers to model a test power system using detailed transmission, generation, load, wind, and solar data. This database includes key additional features that add to the current IEEE 118-bus test model, such as: the inclusion of 10 generation technologies with different heat rate functions, minimum stable levels and ramping rates, GHG emissions rates, regulation and contingency reserves, and hourly time series data for one full year for load, wind and solar generation.</p></span><span class="boxHeading"><p><br>List of References:</p></span><span class="boxContents" id="background"><ol type="1"><li>Pena, I., Brancucci Martinez-Anido, C., Hodge, B.-M., An Extended IEEE 118-bus Test System with High Renewable Penetration, <i>IEEE Transactions on Power Systems</i>, DOI: 10.1109/TPWRS.2017.2695963, 2017.</li><li>WECC, “Transmission Expansion Planning Home and GridView WECC database,” Western Electricity Coordinating Council. [Online]. Available: <a href="https://www.wecc.biz/Reliability/2024-Common-Case.zip">https://www.wecc.biz/Reliability/2024-Common-Case.zip</a>. [Accessed: 21-Oct-2015].</li></ol></span></div>
+    <div id="specificationsBox" class="modelInfoBox"><span class="boxHeading"><p>Model Specifications:</p></span><span class="boxContents" id="specifications">Refer to [1].</span></div>
+    <div id="dependenciesBox" class="modelInfoBox"><span class="boxHeading"><p>Model Dependencies:</p></span><span class="boxContents" id="dependencies">Refer to [1] and to model files and input files provided in the table above (see links).</span></div>
+    <div id="interfacingBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Information:</p></span><span class="boxContents" id="interfacing">PLEXOS.</span></div>
+    <div id="diagramBox" class="modelInfoBox"><span class="boxHeading"><p>Diagrammatic Representation:</p></span><span class="boxContents" id="diagram">N/A</span></div>
+    <div id="hilBox" class="modelInfoBox"><span class="boxHeading"><p>Interfacing Capabilities for HIL Simulations:</p></span><span class="boxContents" id="hil">No.</span></div>
+    <div id="modelValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Model Validation:</p></span><span class="boxContents" id="hil">The model was not validated as it is based on the IEEE-118 test case. The model simulation outputs could be compared with other model outputs but this is the only publicly available dataset for the IEEE-118 node test system.</span></div>
+    <div id="metricValidatBox" class="modelInfoBox"><span class="boxHeading"><p>Metrics for validation:</p></span><span class="boxContents" id="hil">N/A</span></div>
+  </div>
+</div>
+
+
+</body></html>
